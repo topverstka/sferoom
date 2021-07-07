@@ -1,0 +1,351 @@
+.clients-hero
+    padding-top: 24.0625VW
+    padding-bottom: 0
+    text-align: center
+    //background-image: url(../img/front-page/sales/mob-shadow.png)
+    background-repeat: no-repeat
+    background-size: 100vw
+    position: relative
+
+    .decoration--1
+        left: 0
+
+    .title
+        font-size: 8.440625VW
+        line-height: 11.103125VW
+        margin-bottom: 6.5625VW
+        br
+            display: none
+
+    .subtitle
+        font-size: 3.5812500000000003VW
+        line-height: 5.565625VW
+        margin-bottom: 10VW
+        br
+            display: none
+
+    .btn--clients
+        width: 84.628125VW
+        padding: 8.75VW
+        font-size: 3.8375VW
+        line-height: 4.36875VW
+        margin-bottom: 6.5625VW
+
+    .wrap--second
+        padding-top: 0.3125VW
+        margin-bottom: 10.3125VW
+
+    .slider-wrapper
+        position: relative
+        margin-bottom: 49.0625VW
+
+    .slider-container
+        overflow: hidden
+        width: 100%
+        display: flex
+
+        
+
+    .slider-controls
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 94.0625VW
+        display: flex
+        justify-content: space-between
+        z-index: 3
+        top: 46%
+        svg
+            path
+                fill: #fff
+
+    .slider-nav
+        width: 15.556249999999999VW
+        height: 15.556249999999999VW
+        
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        background-color: #cca581
+        svg
+            height: 3.125VW
+            path
+                fill: #695442
+        
+        &.finish
+            opacity: 0
+            visibility: hidden
+            height: 0
+            transform: scale(0)
+            
+
+    .slider-object-antatation
+        width: 92.90937500000001VW
+        height: 52.69375000000001VW
+        position: absolute
+        background: rgba(26, 26, 26, 0.9)
+        border-radius: 0.625VW
+        bottom: -49.0625VW
+        left: 50%
+        transform: translateX(-50%)
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 90.05%, 4.3% 83.41%, 0 76.3%)
+        padding: 6.875000000000001VW 13.4375VW
+        text-align: left
+        z-index: 3
+
+    .slider-object-titile
+        font-size: 8.003125VW
+        line-height: 12.434375000000001VW
+        color: #d7ac87
+
+    .slider-object-link
+        font-size: 4.421875VW
+        line-height: 6.871874999999999VW
+        position: relative
+        color: #d7ac87
+        margin-bottom: 3.25VW
+        display: inline-block
+        &::after
+            content: ''
+            display: block
+            width: 100%
+            position: absolute
+            bottom: -0.3125VW
+            left: 0
+            height: 0.625VW
+            background-color: #d7ac87
+
+    .slider-object-text
+        color: #c3c3c3
+        font-size: 3.6906250000000003VW
+        line-height: 5.734375000000001VW
+        font-weight: bold
+
+    .slider-item
+        width: 100%
+        height: 99.3125VW
+        position: relative
+        transition: all 1s
+        z-index: -1
+        img
+            position: absolute
+            bottom: 0
+            left: 50%
+            height: 89.3125VW
+            filter: grayscale(100%)
+            transform: translateX(-50%)
+            width: auto
+            max-width: none
+            transition: all 0.2s
+            opacity: 0
+
+        &.active
+            z-index: 1
+            img
+                filter: none
+                opacity: 1
+                height: 99.3125VW
+                
+            &+ .slider-item
+                z-index: 0
+                img
+                    opacity: 1
+            
+
+#light-mobile-clients
+    margin-top: 17vw
+    img
+        width: 100%        
+
+
+@media (min-width: 992px)
+
+    .clients-hero
+        padding-top: 13.489583333333332VW
+        padding-bottom: 14.604167VW
+        // background-image: url(../img/front-page/clients/bg.jpg)
+        background-size: cover
+        text-align: left
+        position: relative
+        
+        .wrap--first
+            padding-left: 7.8125VW
+
+        .wrap--second
+            position: absolute
+            margin-bottom: 0VW
+            bottom: 2.083333333333333VW
+
+        
+
+        .container1
+            padding-bottom: 0
+
+        .container2
+            position: absolute
+            bottom: 0.26041666666666663VW
+            left: 50%
+            transform: translateX(-50%)
+            .wrap
+                bottom: 0
+                right: 0
+                position: relative
+                height: 100%
+                width: 100%
+                display: flex
+                justify-content: flex-end
+
+        .title
+            font-size: 2.9859375VW
+            line-height: 3.75VW
+            margin-bottom: 1.875VW
+            letter-spacing: 0.3645833333333333VW
+            br
+                display: block
+
+        .subtitle
+            font-size: 1.3541666666666667VW
+            line-height: 1.9270833333333335VW
+            margin-bottom: 1.7187500000000002VW
+            max-width: 25.7546875VW
+            br
+                display: block
+
+        .btn--clients
+            width: 15.729166666666666VW
+            padding: 1.6145833333333335VW
+            font-size: 0.7135416666666666VW
+            line-height: 0.8119791666666666VW
+            margin-bottom: 0
+
+
+
+
+        .slider-wrapper
+            width: 66%
+            width: 100%
+            position: absolute
+            bottom: 0.625VW
+            right: 0
+            margin-bottom: 0
+
+        .slider-container
+            overflow: hidden
+        
+        .slider-controls
+            width: 33.697916666666664VW
+            top: 19.635416666666668VW
+            left: auto 
+            right: 19VW
+            transform: none
+
+        .slider-nav
+            width: 3.2567708333333334VW
+            height: 3.2567708333333334VW
+            background-color: rgba( 255, 255, 255, 0.07%)
+            transition: all 0.2s
+            svg
+                height: 0.625VW
+                path
+                    fill: #fff
+            &:hover
+                background-color: #cca581
+                cursor: pointer
+                svg
+                    path
+                        fill: #695442
+
+        .slider-item
+            height: 51.927083333333336VW
+            position: relative
+            transition: all 1s
+            z-index: -1
+            img
+                position: absolute
+                top: auto
+                bottom: 0
+                left: 50%
+                opacity: 0
+                max-height: 100%
+                transform: translateX(-50%)
+                height: 39VW
+                transition: all 1s
+                filter: grayscale(100%)
+            
+            &.active
+                z-index: 1
+                
+                img
+                    height: 44.3125VW
+                    filter: none
+                    opacity: 1
+                    
+                    
+                &+.slider-item
+                    min-height: 50.45833333333333VW !important
+                    z-index: 0
+                    img
+                        opacity: 1
+            &.after
+                opacity: 0
+                img
+                    transition: all 1s
+                
+        .slider-object-antatation
+            width: 19.375VW
+            height: 10.989583333333334VW
+            padding: 1.09375VW 3.177083333333333VW
+            position: absolute
+            bottom: 4.010416666666667VW
+            right: 29.135417VW
+            border-radius: 0.10416666666666667VW
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 90.05%, 4.3% 83.41%, 0 76.3%)
+            transform: none
+            left: auto
+
+        .slider-object-titile
+            font-size: 1.5526041666666666VW
+            line-height: 2.4125VW
+            margin-bottom: 0
+            
+
+        .slider-object-link
+            font-size: 0.8578124999999999VW
+            line-height: 1.3333333333333335VW
+            position: relative
+            color: #d7ac87
+            margin-bottom: 0.9VW
+            display: inline-block
+            &::after
+                bottom: -0.10416666666666667VW
+                height: 0.10416666666666667VW
+
+        .slider-object-text
+            color: #c3c3c3
+            font-size: 0.7156250000000001VW
+            line-height: 1.1119791666666667VW
+            font-weight: bold
+        
+    .clients-hero
+        &::after
+            content: ''
+            position: absolute
+            left: 0
+            width: 100%
+            min-height: 15.625VW
+            top: auto
+            bottom: 0
+            z-index: 2
+            background: linear-gradient(0.39deg, #000 15%, rgba(0,0,0,0) 99.9%)
+
+    .decoration--1
+            bottom: -2VW
+            left: auto
+            display: inline-block
+            img
+                width: 3.5937499999999996VW
+            
+
+
+            

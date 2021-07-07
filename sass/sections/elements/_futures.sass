@@ -1,0 +1,139 @@
+.features__elem
+    text-align: left
+    color: $light
+    margin-bottom: 8.75VW
+    display: inline-block
+    flex-basis: 45%
+
+
+.features__elem-circle
+    background-color: #000
+    border-radius: 50%
+    display: inline-flex
+    height: 26.25VW
+    width: 26.25VW
+    justify-content: center
+    align-items: center
+    margin-bottom: 6.25VW
+    img
+        height: 9.375VW
+
+.features__elem-title
+    font-size: 3.75VW
+    line-height: 4.6875VW
+    position: relative
+    margin-bottom: 9.6875VW
+    &::after
+        content: ''
+        display: block
+        width: 8.4375VW
+        height: 0.625VW
+        background-color: $accent
+        position: absolute
+        bottom: -4.0625VW
+        left: 0
+
+.features__elem-text
+    line-height: 4.6875VW
+    font-size: 2.8125VW
+
+.features__elem-circle--pink
+    background-color: #f67384
+    box-shadow: 0px 0px 29.375VW rgba(246, 115, 132, 0.8)
+
+.features__elem-circle--purple
+    background-color: #b888f8
+    box-shadow: 0px 0px 29.375VW rgba(184, 136, 248, 0.8)
+
+.features__elem-circle--turquoise
+    background-color: #6ecac9
+    box-shadow: 0px 0px 29.375VW rgba(110, 202, 201, 0.8)
+
+.features__elem-circle--orange
+    background-color: #ff9655
+    box-shadow: 0px 0px 29.375VW rgba(255, 150, 85, 0.8)
+
+.features__elem-circle--ultramarine
+    background-color: #7382f6
+    box-shadow: 0px 0px 29.375VW rgba(115, 130, 246, 0.8)
+
+.features__elem-circle--violet
+    background-color: #9b73f6
+    box-shadow: 0px 0px 29.375VW rgba(155,115,246, 0.8)
+
+.features__elem-circle--red
+    background-color: #ff6262
+    box-shadow: 0px 0px 29.375VW rgba(255,98,98, 0.8)
+
+
+
+@media (min-width: 992px)
+
+    .features__elem
+        text-align: left
+        width: 9VW
+        margin-bottom: 1.5625VW
+            
+    
+    .features__elem-circle
+        width: 5.416666666666667VW
+        height: 5.416666666666667VW
+        margin-bottom: 1.5625VW
+        img
+            height: 2.4479166666666665VW
+
+    .features__elem-title
+        font-size: 0.9890624999999998VW
+        margin-bottom: 2.083333333333333VW
+        line-height: 1.2421875VW
+        position: relative
+        display: inline-block
+        &::after
+            left: 0
+            transform: none
+            width: 2.15625VW
+            height: 0.13385416666666664VW
+            bottom: -1VW
+            transition: all 0.2s
+
+    .features__elem-text
+        opacity: 0.2
+        font-size: 0.7078125000000001VW
+        line-height: 1.2583333333333333VW
+        transition: all 0.2s
+
+    .features__elem
+        &:hover
+            cursor: pointer
+            .features__elem-title
+                &::after
+                    width: 100%
+            .features__elem-text
+                opacity: 1
+                color: #fff
+
+    .features__elem-circle--pink
+        box-shadow: 0px 0px 6VW rgba(246, 115, 132, 0.8)
+
+    .features__elem-circle--purple
+        box-shadow: 0px 0px 6VW rgba(184, 136, 248, 0.8)
+
+    .features__elem-circle--turquoise
+        box-shadow: 0px 0px 6VW rgba(110, 202, 201, 0.8)
+
+    .features__elem-circle--orange
+        box-shadow: 0px 0px 6VW rgba(255, 150, 85, 0.8)
+
+    .features__elem-circle--ultramarine
+        box-shadow: 0px 0px 6VW rgba(115, 130, 246, 0.8)
+
+    .features__elem-circle--violet
+        box-shadow: 0px 0px 6VW rgba(155,115,246, 0.8)
+
+    .features__elem-circle--red
+        box-shadow: 0px 0px 6VW rgba(255,98,98, 0.8)
+    
+
+        
+
+        

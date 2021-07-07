@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,AAAC,CACjB,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,mBAAmB,CACxB,IAAI,CAAE,QAAQ,CACd,GAAG,CAAE,KAAK,CACV,GAAG,CAAE,IAAI,CACT,KAAK,CAAE,OAAO,CACd,OAAO,CAAE,EAAE,CAEQ,AATvB,AAQI,oBARgB,AAQf,OAAO,AAAC,CACL,OAAO,CAAE,CAAC,CAAG",
+    "sources": [
+        "../../../Users/nardo/Downloads/Telegram Desktop/mobile_videos.sass"
+    ],
+    "names": [],
+    "file": "mobile_videos.css"
+}

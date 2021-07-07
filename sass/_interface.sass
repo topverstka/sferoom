@@ -1,0 +1,208 @@
+// USER VARIABLES SECTION
+
+$accent: #f3bd93 // Accent Color
+$dark: #141414
+$light: #fff
+$bg_gray: #F8F8F8
+
+
+
+$fontsize: 16px // Body Font Size
+
+$textcolor: #ffffff6 // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$default_font: 'SF Pro Display Regular', sans-serif
+$titles_font: 'SF Pro Display Bold', sans-serif
+$title_span_font: 'SignPainter', sans-serif
+$medium_font: 'SF Pro Display Medium', sans-serif
+
+
+
+
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+    @font-face
+        font-family: $fname
+        font-style: $fstyle
+        font-weight: $fweight
+        // font-display: swap // Uncomment to initially display system fonts
+        src: local($fname), url($furl) format('woff2')
+
+@include font('SF Pro Display Bold', normal, 700, '../fonts/SFProDisplay/SFProDisplay-Bold.ttf')
+@include font('SF Pro Display Medium', normal, 700, '../fonts/SFProDisplay/SFProDisplay-Medium.ttf')
+@include font('SF Pro Display Regular', normal, 700, '../fonts/SFProDisplay/SFProDisplay-Regular.ttf')
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+// GENERAL DOCUMENT STYLES
+
+*
+    box-sizing: border-box
+    outline: none
+    margin: 0
+    padding: 0
+    appearance: none
+
+
+input, textarea
+    border: none
+
+a
+    text-decoration: none
+body
+    font-family: $default_font
+    font-size: 5vw
+    position: relative
+    color: $textcolor
+    background-color: #000
+    &.stop
+        overflow: hidden
+
+
+
+
+h1,h2,h3,h4
+    font-family: $titles_font
+
+h1
+    font-size: 6.875000000000001VW
+    margin-bottom: 15.625VW
+
+h2
+    font-size: 10.9375VW
+    margin-bottom: 15.625VW
+    span
+        color: $accent
+
+img
+    max-width: 100%
+
+
+input, textarea, button
+    outline: none
+    border: none
+    &:focus:required:invalid
+        border-color: red
+    &:required:valid
+        border-color: green
+
+
+
+        
+.btn
+    text-align: center
+    display: inline-flex
+    align-content: center
+    justify-content: center
+    font-size: 3.9968749999999997VW
+    color: $dark
+    padding: 9vw
+    width: 100%
+    color: $light
+    font-family: $titles_font
+    border-radius: 0.625VW
+    letter-spacing: 0.625VW
+    text-transform: uppercase
+    z-index: 1
+
+.btn--full 
+    color: $dark
+    position: relative
+    background-color: rgb(197,160,121)
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        transition: all 0.2s
+        z-index: -1   
+        background: linear-gradient(0deg, rgba(197,160,121,1) 0%, rgba(243,189,147,1) 100%)
+
+.btn--dark
+    background-color: #1f2328
+    color: $accent
+
+.btn--lk
+    background-color: transparent
+    border: 0.3125VW solid $accent
+    color: $accent
+    &::before
+        display: none
+
+
+
+.btn--accent
+    overflow: hidden
+    position: relative
+    &:after
+        content: ""
+        top: -50%
+        right: -50%
+        right: -50%
+        bottom: -50%
+        left: -50%
+        background: linear-gradient(to bottom,rgba(229,172,142,0),rgba(255,255,255,.7) 50%,rgba(229,172,142,0))
+        transform: rotateZ(60deg) translate(-5em,7.5em)
+        opacity: 0
+        position: absolute
+        z-index: 1
+        filter: alpha(opacity=0)
+        animation: sheens 3s infinite
+    
+
+.video--pc
+    display: none
+
+
+@media (min-width: 992px)
+    body
+        font-size: 0.85vw
+
+    .btn
+        transition: all 0.2s
+        max-width: 15.312500000000002VW
+        width: 100%
+        padding: 1.5104166666666667VW
+        font-size: 0.6947916666666667VW
+        border-radius: 0.10416666666666667VW
+        letter-spacing: 0.15625VW
+
+        &:hover
+            cursor: pointer
+            background-color: $light
+            color: $dark
+
+    h2
+        margin-bottom: 3.75VW
+        font-size: 2.34375VW
+    
+    .btn--full
+        &:hover
+            background:#e0aa80
+            &::before
+                opacity: 0
+
+    .btn--lk
+        position: absolute
+        right: 2.34375VW
+        transform: scale(0.8)
+    
+    .video--pc
+        display: block
+
+    .video--mob
+        display: none

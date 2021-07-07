@@ -1,0 +1,228 @@
+.sales-hero
+    padding-top: 10.3125VW
+    padding-bottom: 0
+    text-align: center
+    .title
+        font-size: 12.846874999999999VW
+        line-height: 16.134375000000002VW
+        margin-bottom: 7.5VW
+
+    .subtitle
+        font-size: 3.5812500000000003VW
+        line-height: 5.565625VW
+        margin-bottom: 11.25VW
+
+    .btn--sales
+        width: 84.628125VW
+        padding: 8.75VW
+        font-size: 3.8375VW
+        line-height: 4.36875VW
+        margin-bottom: 6.5625VW
+
+    .sales-phone
+        position: relative
+
+    .sales-phone__album
+        position: absolute
+        top: 23.4375VW
+        z-index: 1
+        text-align: left
+        left: 50%
+        transform: translateX(-50%)
+        color: #fff
+        transition: all 1s
+        opacity: 0
+        &:nth-child(3)
+            display: none
+        &:nth-child(4)
+            display: none
+
+    .sales-phone__album-img
+        display: inline-block
+        margin-bottom: 1.5625VW
+        img
+            width: 54.37499999999999VW
+
+    .sales-phone__album-title
+        font-size: 5.625VW
+        line-height: 8.75VW
+        margin-bottom: 0
+        color: #cbcbcb
+
+    .sales-phone__albumauthor
+        font-size: 4.70625VW
+        line-height: 7.315625000000001VW
+        color: #57585a
+
+    .sales-phone__background
+        display: inline-block
+        img
+            position: relative
+            top: 0.9375VW
+            width: 84.6875VW
+    .sales-phone__controll
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 15.5%
+        height: 17.1875VW
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 1000
+        button
+            background: transparent
+            cursor: pointer
+            outline: none
+
+    .sales-phone__play
+        margin: 0 3.125VW
+        height: 100%
+        width: 17.1875VW
+    .sales-phone__prev
+        height: 7.8125VW
+        width: 12.5VW
+    .sales-phone__next
+        height: 7.8125VW
+        width: 12.5VW
+    
+
+
+    .wrap--second
+        display: none
+
+    .dynamin-phone__alert
+        top: 14.0625VW
+        left: 42.8125VW
+        width: 45.9375VW
+
+@media (min-width: 992px)
+    .sales-hero
+        padding-top: 5.15625VW
+        padding-bottom: 22.34375VW
+        text-align: left
+        background-image: url(../img/front-page/sales/bg.png)
+        background-position: right 20.78125VW
+        background-repeat: no-repeat
+        &::before
+            content: ''
+            background: linear-gradient(0deg, #000 5%, rgba(0,0,0,0) 99.9%)
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            min-height: 7.625VW
+
+        .wrap--first
+            padding-left: 0.9375VW
+
+        .wrap--second
+            position: absolute
+            bottom: 2.03125VW
+
+        .container1
+            padding-bottom: 0
+
+        .container2
+            position: absolute
+            bottom: 0.26041666666666663VW
+            left: 50%
+            transform: translateX(-50%)
+            .wrap
+                bottom: 0
+                right: 0
+                position: relative
+                height: 100%
+                width: 100%
+                display: flex
+                justify-content: flex-end
+
+        .title
+            font-size: 2.9859375VW
+            line-height: 3.75VW
+            letter-spacing: 0.4166666666666667VW
+            margin-bottom: 1.3541666666666667VW
+
+        .subtitle
+            font-size: 1.0552083333333333VW
+            line-height: 1.6401041666666665VW
+            margin-bottom: 2.96875VW
+            max-width: 25.7546875VW
+            position: relative
+            left: 0.15625VW
+            letter-spacing: 0.052083333333333336VW
+
+        .btn--sales
+            width: 15.729166666666666VW
+            padding: 1.6145833333333335VW
+            font-size: 0.7135416666666666VW
+            line-height: 0.8119791666666666VW
+            margin-bottom: 0
+
+        .sales-phone
+            position: relative
+            right: -3.0208333333333335VW
+            bottom: 7.8125VW
+
+        .dynamin-phone__alert
+            width: none
+            left: auto
+            right: -2.604166666666667VW
+            width: 10.260416666666666VW
+            top: 7.291666666666667VW
+            z-index: 4
+
+        .sales-phone__album
+            position: absolute
+            top: 6.458333333333334VW
+            z-index: 1
+            text-align: left
+            color: #fff
+            width: 14.635416666666668VW
+            left: 49%
+            &:hover
+                cursor: pointer
+
+            &:nth-child(2)
+                z-index: 3
+
+            &:nth-child(3)
+                display: inline-block
+                transition: all 1s
+                z-index: 2
+                .sales-phone__album-title, .sales-phone__albumauthor
+                    opacity: 0
+                    transition: all 1s
+
+            &:nth-child(4)
+                display: inline-block
+                transition: all 1.5s
+                right: 1.5625VW
+                .sales-phone__album-title, .sales-phone__albumauthor
+                    opacity: 0
+                    transition: all 1s
+
+        .sales-phone__album-img
+            display: inline-block
+            margin-bottom: 0.5208333333333333VW
+            img
+                width: 14.635416666666668VW
+
+        .sales-phone__album-title
+            font-size: 1.0427083333333333VW
+            line-height: 1.6203124999999998VW
+            margin-bottom: 0
+
+        .sales-phone__albumauthor
+            font-size: 0.784375VW
+            line-height: 1.2192708333333333VW
+
+        .sales-phone__background
+            display: inline-block
+            img
+                position: relative
+                top: 0.46875VW
+                width: 22.395833333333336VW
+
+        .wrap--second
+            display: block

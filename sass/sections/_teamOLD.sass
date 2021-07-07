@@ -1,0 +1,301 @@
+.team-hero
+    color: $light
+    background-color: #0a090a
+    padding-top: 42.5VW
+    padding-bottom: 9.0625VW
+    text-align: center
+
+    .wrap--second
+        position: relative
+
+    .slider-wrapper
+        position: relative
+        margin-bottom: 49.0625VW
+
+    .slider-container
+        overflow: hidden
+        width: 100%
+        display: flex
+
+
+        
+
+
+    .slider-item
+        width: 100%
+        height: 99.3125VW
+        position: relative
+        transition: all 1s
+        z-index: -1
+        img
+            position: absolute
+            bottom: 0
+            left: 50%
+            height: 89.3125VW
+            filter: grayscale(100%)
+            transform: translateX(-50%)
+            width: auto
+            max-width: none
+            transition: all 0.2s
+            opacity: 0
+            &.team-slide-img__before
+                opacity: 0
+            &.team-slide-img__after
+                opacity: 0
+
+        &.active
+            z-index: 1
+            img
+                filter: none
+                opacity: 1
+                height: 99.3125VW
+                &.team-slide-img__before
+                    opacity: 0
+                &.team-slide-img__after
+                    opacity: 0
+                
+            &+ .slider-item
+                z-index: 0
+                img
+                    opacity: 1
+                    &.team-slide-img__before
+                        opacity: 0
+                    &.team-slide-img__after
+                        opacity: 0
+                    
+
+        
+
+    .slider-controls
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 94.0625VW
+        display: flex
+        justify-content: space-between
+        z-index: 4
+        top: 46%
+        svg
+            path
+                fill: #fff
+
+    .slider-nav
+        width: 15.556249999999999VW
+        height: 15.556249999999999VW
+        background-color: rgba( 255, 255, 255, 0.07%)
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        svg
+            height: 3.125VW
+        
+        &.finish
+            opacity: 0
+            visibility: hidden
+            height: 0
+            transform: scale(0)
+            
+
+    .slider-object-antatation
+        width: 92.89999999999999VW
+        position: absolute
+        background: rgba(26, 26, 26, 0.9)
+        border-radius: 2px
+        bottom: -55.6875VW
+        left: 50%
+        transform: translateX(-50%)
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 90.05%, 4.3% 83.41%, 0 76.3%)
+        padding: 9.6875VW 14.0625VW
+        text-align: left
+        z-index: 3
+
+    .slider-object-titile
+        font-size: 5.903125VW
+        line-height: 9.175VW
+        line-height: 
+        color: #fff
+        margin-bottom: 5VW
+        span
+            display: inline-block
+            color: #d7ac87
+
+    .slider-object-text
+        color: #c3c3c3
+        font-size: 3.6906250000000003VW
+        line-height: 5.734375000000001VW
+        font-weight: bold
+
+    
+
+
+
+
+
+
+
+    
+
+@media (min-width: 992px)
+    .team-hero
+        padding-top: 13.28125VW
+        padding-bottom: 0
+        position: relative
+        overflow: hidden
+        height: 56.25VW
+        overflow: hidden
+        background-image: url(../img/front-page/team/bg.jpg)
+        background-size: 100%
+        
+        .wrap--second
+            position: absolute
+            bottom: 2.1875VW
+            z-index: 1
+
+        &::after
+            top: auto
+            bottom: 0
+            z-index: 3
+            background: linear-gradient(0.39deg, #000 15%, rgba(255,255,255,0) 99.9%)
+
+        .social-links
+            margin-top: 8.270833VW
+
+        
+
+        .slider-wrapper
+            width: 100%
+            position: absolute
+            bottom: 0
+            right: 0
+            margin-bottom: 0
+            height: 56.25VW
+
+        .slider-container
+            overflow: hidden
+        
+        .slider-controls
+            width: 36.45833333333333VW
+            top: 19.0625VW
+            //left: 50%
+            transform: none
+            left: auto
+            right: 29.7VW
+
+        .slider-nav
+            width: 3.2567708333333334VW
+            height: 3.2567708333333334VW
+            transition: all 0.2s
+            svg
+                height: 0.625VW
+            &:hover
+                background-color: #cca581
+                cursor: pointer
+                svg
+                    path
+                        fill: #695442
+
+        .slider-item
+            width: 44.635416666666664VW
+            height: 40VW
+            position: relative
+            transition: all 1s
+            opacity: 0
+            z-index: -1
+            overflow: hidden
+            img
+                position: absolute
+                top: auto
+                bottom: 0
+                left: 50%
+                height: auto
+                transform: translateX(-50%)
+                width: 100%
+                max-width: 36.020833333333336VW
+                transition: all 1s
+                
+            &.active
+                opacity: 1
+                min-width: 29.114583333333332VW !important
+                z-index: 0
+                bottom: -0.4375VW
+                left: 9.854167VW
+                img
+                    max-width: none
+                    width: 29.114583333333332VW
+                    opacity: 0
+                    &.team-slide-img__after
+                        opacity: 1
+                    
+                &+.slider-item
+                    min-width: 69.8125VW !important
+                    opacity: 1
+                    z-index: 1
+                    right: 14VW
+                    height: 56.25VW
+                    img
+                        width: 100%
+                        max-width: none
+                        opacity: 1
+                        top: 0
+                        &.team-slide-img__after
+                            opacity: 0
+                        &.team-slide-img__before
+                            opacity: 0
+
+                    &+.slider-item
+                        min-width: 28.020833333333332VW !important
+                        opacity: 1
+                        z-index: 0
+                        //left: -43.135417VW
+                        left: -40.135417VW
+                        
+                        bottom: -2.604167VW
+                        img
+                            width: 28.020833333333332VW
+                            max-width: none
+                            opacity: 0
+                            &.team-slide-img__before
+                                opacity: 1
+                            &.team-slide-img__after
+                                opacity: 0
+                            
+
+        .slider-object-antatation
+            width: 19.375VW
+            padding: 2.03125VW 2.96875VW
+            position: absolute
+            bottom: 15.239583VW
+            //right: 22.958333VW
+            right: 20.1vw
+            border-radius: 2px
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 90.05%, 4.3% 83.41%, 0 76.3%)
+            transform: none
+            left: auto
+        
+
+        .slider-object-titile
+            font-size: 1.23125VW
+            line-height: 1.913541666666667VW
+            margin-bottom: 0.79375VW
+
+
+        .slider-object-text
+            color: #c3c3c3
+            font-size: 0.7156250000000001VW
+            line-height: 1.1119791666666667VW
+            font-weight: bold
+
+
+
+
+
+
+
+
+
+
+
+
+
+

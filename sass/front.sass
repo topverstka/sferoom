@@ -1,0 +1,470 @@
+@import 'interface'
+@import 'grid'
+@import 'header'
+
+
+.screen-slide-wrapper
+    height: 100vh
+
+.preloader
+    background-color: #000
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 10
+    transition: all 0.5s
+    overflow: hidden
+    &.done
+        z-index: 0
+        opacity: 0
+
+.preloader__video
+    width: 100vw
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+@media (min-width: 992px)
+
+    .preloader-box__logo
+        width: 2.604166666666667VW
+        margin-bottom: 3.6458333333333335VW
+        img
+            width: 2.604166666666667VW
+            max-width: 10.416666666666668VW
+
+    .preloader-box-line
+        width: 14.322916666666666VW
+        max-width: 21.875VW
+        background-color: #aeaeae
+        height: 0.3125VW
+        position: relative
+
+.screen-slide-wrapper
+    width: 100%
+    height: 100vh
+
+.screen-slide-track
+    position: relative
+    transition: all 1s
+    transform: translateY(0)
+    overflow: hidden
+
+.screen-slide
+    width: 100%
+    position: relative
+
+.black-block
+    width: 100%
+    height: 100%
+    background-color: #000
+    position: absolute
+
+    transition: all 0.2s
+
+    z-index: 1
+    opacity: 0
+
+._animation-video
+    opacity: 0 !important
+    &._active
+        opacity: 1 !important
+
+.video-hack
+    overflow: hidden
+    height: 0
+    visibility: hidden
+    position: abolute
+    top: 0
+    left: 0
+    width: 0
+
+.video__media
+    opacity: 0
+    transition: all 0.2s
+
+.hero
+    .container
+        position: relative
+    .wrap--second
+        position: relative
+
+.decoration
+    position: absolute
+
+.title
+    font-size: 9.5vw
+    margin-bottom: 5.5vw
+    color: #efba90
+    letter-spacing: 1.6vw
+    position: relative
+
+.subtitle
+    margin-bottom: 150vw
+    font-size: 3.6vw
+    line-height: 6vw
+    font-family: $default_font
+    color: #c8c8c8
+    position: relative
+
+.wrap--first
+    position: relative
+    .btn
+        transform: scale(0.9)
+
+
+
+.social-links
+    margin-top: 15.625VW
+    justify-content: center
+    display: flex
+    align-items: center
+    justify-content: center
+
+.social-link
+    margin-right: 9.0625VW
+    &:last-child
+        margin-right: 0px
+    svg
+        height: 5vw
+        path
+            fill: #39383f
+
+.social-link--instagram
+    svg
+        height: 7vw
+
+.social-link--vk
+    svg
+        height: 7vw
+
+.social-link--youtube
+    svg
+        height: 7vw
+
+.social-link--facebook
+    svg
+        height: 6vw
+
+.scroll-alert
+    display: none
+
+.dynamin-phone__alert
+    position: absolute
+    z-index: 1
+    transition: all 1s
+    right: 50px
+    top: 50px
+    z-index: 2
+    &.done
+        opacity: 0
+
+.dynamin-phone__alert-box
+    position: relative
+    padding: 2.8125VW 3.4375000000000004VW
+    text-align: left
+    background: #22262b
+    border: 0.625VW solid #997148
+    border-radius: 0.625VW
+    display: inline-block
+    color: #fff
+    &::after
+        content: ''
+        width: 2.5VW
+        height: 2.5VW
+        display: block
+        background-color: #f3bd93
+        border-radius: 50%
+        top: 50%
+        transform: translateY(-50%)
+        left: -1.25VW
+        position: absolute
+
+.dynamin-phone__alert-box-text
+    font-size: 3.125VW
+    line-height: 3.125VW
+    margin-bottom: 0.9375VW
+    span
+        font-weight: bold
+        font-size: 3.125VW
+        line-height: 0.7776041666666667VW
+        font-family: "SF Pro Display Bold",sans-serif
+
+        &:last-child
+            margin-bottom: 0
+
+.dynamin-phone__alert-circle
+    width: 7.8125VW
+    height: 7.8125VW
+    border-radius: 50%
+    position: absolute
+    left: -4.6875VW
+    top: 50%
+    transform: translateY(-50%)
+    z-index: -1
+    &::after
+        content: ''
+        position: absolute
+        border: 0.3125VW solid #9b7349
+        left: -0.3125VW
+        right: -0.3125VW
+        top: -0.3125VW
+        bottom: -0.3125VW
+        border-radius: 50%
+        animation: pulse 4s linear infinite
+        opacity: 0
+        z-index: -1
+        animation-delay: 2s
+
+        &::before
+            content: ''
+            position: absolute
+            border: 0.3125VW solid #9b7349
+            left: -0.3125VW
+            right: -0.3125VW
+            top: -0.3125VW
+            bottom: -0.3125VW
+            border-radius: 50%
+            animation: pulse 4s linear infinite
+            opacity: 0
+            z-index: -1
+
+.decoration-light
+    position: absolute
+    left: 0
+
+#lights-first-distribution
+    margin-top: -127.09375VW
+    width: 100%
+    img
+        width: 100%
+
+#meteors-first-distribution
+    margin-top: -48.4375VW
+    img
+        width: 30.625000000000004VW
+
+#meteors-mobile-distribution-promoution1
+    margin-top: -54.37499999999999VW
+    z-index: -1
+    img
+        width: 38.4375VW
+
+#meteors-mobile-distribution-promoution2
+    margin-top: -60.375VW
+    right: 0
+    img
+        width: 29.6875VW
+    
+
+@media (min-width: 992px)
+    .hero
+        .wrap--first
+            text-align: left
+
+        .wrap--second
+            position: absolute
+            bottom: 1.6666666666666667VW
+
+    .title
+        font-size: 3.682291666666667VW
+        line-height: 4.624479166666666VW
+        margin-bottom: 1.7187500000000002VW
+        transform: translateY(2vw)
+        opacity: 0
+        transition: all 1s
+
+    .subtitle
+        font-size: 1.1520833333333333VW
+        line-height: 1.7901041666666666VW
+        margin-bottom: 2.7083333333333335VW
+        color: #c8c8c8
+        transform: translateY(2vw)
+        opacity: 0
+        transition: all 1.5s
+
+    .wrap--first
+        .btn
+            transform: scale(1)
+            z-index: 9
+            transform: translateY(2vw)
+            opacity: 0
+            transition: all 2s
+
+    .social-links
+        margin-left: 5.364583333333333VW
+        margin-top: 12.34375VW
+        margin-top: 14.270833333333332VW
+
+    .social-link
+        opacity: 0.2
+        transition: all 0.2s
+        margin-right: 1.5104166666666667VW
+        &:hover
+            opacity: 1
+
+    .social-link--instagram
+        svg
+            height: 1.1458333333333333VW
+    .social-link--vk
+        svg
+            height: 1.1458333333333333VW
+    .social-link--youtube
+        svg
+            height: 1.1458333333333333VW
+    .social-link--facebook
+        svg
+            height: 1.1458333333333333VW
+
+    .scroll-alert
+        display: block
+        position: absolute
+        left: -1.3020833333333335VW
+        bottom: 6.5625VW
+        transform: rotate(-90deg)
+        opacity: 0.2
+        color: #fff
+
+    .scroll-alert__text
+        position: relative
+        font-size: 0.5385416666666667VW
+        &::before
+            content: ''
+            display: block
+            width: 4.010416666666667VW
+            height: 0.052083333333333336VW
+            background-color: $light
+            position: absolute
+            left: -5.052083333333333VW
+            top: 50%
+            transform: translateY(-50%)
+
+    .dynamin-phone__alert
+        right: -7.8125VW
+        top: 1.3020833333333335VW
+
+    .dynamin-phone__alert-box
+        padding: 0.78125VW 1.25VW
+        border: 0.052083333333333336VW solid #997148
+        border-radius: 0.10416666666666667VW
+        &::after
+            width: 0.5208333333333333VW
+            height: 0.5208333333333333VW
+            left: -0.26041666666666663VW
+
+    .dynamin-phone__alert-box-text
+        font-size: 0.6770833333333334VW
+        line-height: 0.7776041666666667VW
+        margin-bottom: 0.26041666666666663VW
+        span
+            font-size: 0.78125VW
+            line-height: 0.7776041666666667VW
+            &:last-child
+                margin-bottom: 0
+
+    .dynamin-phone__alert-circle
+        width: 1.3020833333333335VW
+        height: 1.3020833333333335VW
+        left: -0.78125VW
+        &::after
+            border: 0.052083333333333336VW solid #9b7349
+            left: -0.5208333333333333VW
+            right: -0.5208333333333333VW
+            top: -0.5208333333333333VW
+            bottom: -0.5208333333333333VW
+
+        &::before
+            border: 0.052083333333333336VW solid #9b7349
+            left: -0.5208333333333333VW
+            right: -0.5208333333333333VW
+            top: -0.5208333333333333VW
+            bottom: -0.5208333333333333VW
+
+    
+    
+    #bottom
+        bottom: -13vw
+        width: 100vw
+        img
+            width: 100vw
+    
+    
+
+    #faq-promoution
+        left: 0
+        margin-top: -5vw
+        z-index: 3
+        img
+            width: 13.333333333333334VW
+
+    #blog-analytics
+        right: 0
+        z-index: 3
+        margin-top: -20vw
+        img
+            width: 10.729166666666666VW
+
+    #packaging-sales
+        left: 0
+        z-index: 3
+        margin-top: -14vw
+        img
+            width: 9.739583333333334VW
+
+    .decoration-light--mobile, .decoration--mobile
+        display: none
+
+@media (max-width: 992px)
+    body
+        overflow: auto
+
+    .screen-slide-wrapper
+        height: auto
+
+    .screen-slide
+        min-height: auto
+        max-height: max-content
+        height: auto
+        overflow: hidden
+        &__wrapper
+            min-height: auto
+
+    // Декоративные эелменты
+    #bottom
+        display: none
+        
+    #faq-promoution
+        display: none
+
+    #blog-analytics
+        display: none
+
+    #packaging-sales
+        display: none
+    
+
+// Запуск анимации для звезд и проч темы
+// .first-screen-decoration--stars, .decoration--7, .decoration.stars
+// 	animation-name: stars
+// 	animation-duration: 2s
+// 	animation-iteration-count: infinite
+// 	animation-timing-function: linear
+
+@import 'sections/first'
+@import 'sections/promotion'
+@import 'sections/distribution'
+@import 'sections/analytiсs'
+@import 'sections/tournaments'
+@import 'sections/team'
+@import 'sections/clients'
+@import 'sections/packaging'
+@import 'sections/sales'
+@import 'modal'
+
+

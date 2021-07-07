@@ -1,0 +1,106 @@
+.modal
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: -1
+    transition: all 0.5s
+    &.modal--active
+        z-index: 5
+        .modal-overlay
+            opacity: 0.74
+
+
+.modal-overlay
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #292929
+    opacity: 0
+    transition: all 0.5s
+
+
+.modal-window
+    background-color: #111215
+    padding: 9.375VW
+    position: relative
+    border-radius: 0.625VW
+    opacity: 0
+    visibility: hidden
+    transform: scale(0)
+    transition: all 0.5s
+
+.modal-window--order
+    text-align: center
+    width: 85.9375VW
+
+.modal-window--active
+    opacity: 1
+    transform: scale(1)
+    visibility: visible
+
+.modal-window__title
+    color: #efbc92
+    text-transform: uppercase
+    font-size: 5.625VW
+    margin-bottom: 3.125VW
+
+.modal-window__descr
+    color: #fff
+    font-size: 4.0625VW
+    margin-bottom: 6.25VW
+
+.modal-window__form-input
+    background-color: #202429
+    margin-bottom: 6.25VW
+    width: 100%
+    border-radius: 0.625VW
+    padding: 6.25VW
+    font-size: 4.0625VW
+
+.btn--modal-form
+    font-size: 3.75VW
+    
+
+@media (min-width: 992px)
+    .modal-window
+        padding: 2.7604166666666665VW
+        border-radius: 0.10416666666666667VW
+
+    .modal-window--order
+        width: 21.197916666666668VW
+
+    .modal-window__title
+        font-size: 1.0416666666666665VW
+        letter-spacing: 0.15625VW
+        line-height: 1.1458333333333333VW
+        margin-bottom: 0.8333333333333334VW
+        
+    
+    .modal-window__descr
+        font-size: 0.8057291666666667VW
+        line-height: 1.9807291666666667VW
+        margin-bottom: 1.7187500000000002VW
+
+    .modal-window__form-input
+        padding: 1.6666666666666667VW
+        font-size: 0.7135416666666666VW
+        line-height: 0.8119791666666666VW
+        margin-bottom: 1.4583333333333333VW
+        border-radius: 0.10416666666666667VW
+
+    .btn--modal-form
+        font-size: 0.7135416666666666VW
+        line-height: 0.8119791666666666VW
+        padding: 1.6145833333333335VW
+    
+
+        
+        
+    

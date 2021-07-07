@@ -1,0 +1,356 @@
+.header
+	padding-top: 12.812499999999998VW
+	padding-top: 13.01vw
+	padding-bottom: 4.6875VW
+	transition: all 0.5s
+	width: 100%
+	background: transparent
+	z-index: 7
+	position: absolute
+	top: 0
+	left: 0
+	.wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+
+	.btn--lk
+		display: none
+		transform: scale(0.9)
+	
+.header--glued
+	position: fixed
+	background-color: rgba(0,0,0, 0.8)
+	padding-top: 8vw
+	padding-bottom: 8vw
+
+.header__logo
+	max-width: 9.7vw
+	width: 100%
+	img
+		max-width: 9.7vw
+		width: 100%
+
+.header__burger
+	display: flex
+	align-items: center
+	position: relative
+	flex-wrap: wrap
+	width: 9.1vw
+	transition: all 0.5s
+	cursor: pointer
+	span
+		display: block
+		background-color: #5d5d5d
+		width: 9.1vw
+		height: 0.625VW
+		margin-bottom: 1.9vw
+		transition: all 0.5s
+		&:last-child
+			margin-bottom: 0
+		&:nth-child(2)
+			width: 7.2vw
+
+	&.active
+		span
+			background-color: #bb815b
+			&:nth-child(1)
+				position: relative
+				top: 1.875VW
+				top: 1.5VW
+				transform: rotate(45deg)
+
+			&:nth-child(2)
+				opacity: 0
+			
+			&:nth-child(3)
+				position: relative
+				top: -3.4375000000000004VW
+				transform: rotate(-45deg)
+
+.close
+	width: 8.125VW
+	height: 12vw
+	margin: 0 auto
+	display: none
+	span
+		display: block
+		width: 8.125VW
+		height: 0.9375VW
+		background-color: #997148
+		border-radius: 3.1vw
+		&:first-child
+			transform: rotate(45deg)
+			position: relative
+			top: 3.1vw
+		&:last-child
+			transform: rotate(-45deg)
+			position: relative
+			top: 2.2vw
+
+
+.header__nav
+	width: 100%
+	display: none
+	ul
+		padding: 0
+		margin: 0 auto
+	li
+		list-style: none
+		margin-bottom: 12.812499999999998VW
+		text-align: center
+		a
+			font-size: 4.375VW
+			color: #6d6d6d
+			font-weight: bold
+			transition: all .2s
+			font-family: $default_font
+			text-transform: uppercase
+		&:last-child
+			margin-bottom: 0
+		&.current_page_item
+			a
+				color: #fff
+				position: relative
+				&::after
+					content: ''
+					display: block
+					width: 13.125VW
+					height: 0.625VW
+					background-color: #fbab76
+					position: absolute
+					bottom: -4.6875VW
+					left: 50%
+					transform: translateX(-50%)
+
+.header-right
+	display: none
+
+.header__phone
+	display: flex
+	align-items: center
+	margin-top: 17.5VW
+
+.header__phone-circle
+	width: 8.125VW
+	height: 8.125VW
+	background-color: $accent
+	border-radius: 50%
+	position: relative
+	margin-right: 2.8125VW
+	display: inline-block
+	object
+		width: 3.125VW
+		height: 3.125VW
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+
+.header__phone-number
+	color: #fff
+	font-size: 5.721875VW
+	font-family: $medium_font
+	letter-spacing: 0.625VW
+
+
+
+
+.screen-slide.blur
+	filter: blur(0.9375VW)
+
+
+
+@media (max-width: 991px)
+	.header--active
+		overflow-y: scroll
+		background-color: rgba(18,19,24, 0.94)
+		z-index: 7
+		padding-top: 12.812499999999998VW
+		background-position: center bottom
+		background-repeat: no-repeat
+		background-size: 100vw
+		max-height: 100vh
+		.container
+			width:  84.375%
+		.wrap
+			flex-wrap: wrap
+			position: relative
+			justify-content: center
+
+		.header__logo
+			order: 0
+
+		.header__burger
+			margin: 0
+			order: 2
+			position: absolute
+			right: 0
+			top: 1.5625VW
+
+		.header__nav
+			display: block
+			text-align: left
+			margin-top: 20VW
+
+		.header-right
+			display: block
+			order: 3
+
+		.header__phone
+			display: flex
+			margin-bottom: 10.9375VW
+
+		.btn--lk
+			display: inline-block
+			margin-bottom: 21.5625VW
+
+		.header__lang-current
+			font-size: 5.625VW
+			font-size: 5.5vw
+
+
+
+	
+
+@media (min-width: 992px)
+	.header
+		padding-top: 2vw
+		padding-bottom: 2vw
+		z-index: 7
+		.wrap
+			justify-content: flex-start
+			position: relative
+
+		.btn--lk
+			display: inline-flex
+			width: 8.489583333333334VW
+			height: 2.7604166666666665VW
+			padding: 0
+			transform: scale(1)
+			font-size: 0.5208333333333333VW
+			letter-spacing: 0.052083333333333336VW
+			align-items: center
+			justify-content: center
+			position: relative
+			margin: 0
+			margin-left: 2.2395833333333335VW
+			border-width: 0.052083333333333336VW
+	
+	.header--glued
+		padding-top: 2vw
+		padding-bottom: 2vw
+
+	.header__logo
+		margin-right: 1.85VW
+		width: 1.6vw
+		position: relative
+		right: 0.5208333333333333VW
+		bottom: 0
+		img
+			width: 1.6vw
+			max-width: none
+
+
+	.header__burger
+		width: 1.3927083333333332VW
+		height: 1.3927083333333332VW
+		position: relative
+		bottom: -0.052083333333333336VW
+		span
+			width: 1.33VW
+			height: 0.10416666666666667VW
+			margin-bottom: 0.05VW
+			&:last-child
+				margin-bottom: 0
+			&:nth-child(2)
+				width: 1.1VW
+
+		&.active
+			span
+				&:nth-child(1)
+					top: 0.41VW
+				&:nth-child(3)
+					top: -0.5208333333333333VW
+
+
+	.header__burger
+		margin-right: 2.083333333333333VW
+		&:hover
+			opacity: 1
+
+	.header__nav
+		order: 1
+		width: auto
+		margin-right: 0
+		display: inline-block
+		transition: all .5s
+		top: -5.208333333333334VW
+		position: relative
+		transform: scale(0.5)
+		margin-right: 0.5208333333333333VW
+		ul
+			display: flex
+			li
+				list-style: none
+				margin-right: 1.3020833333333335VW
+				margin-bottom: 0
+				&:last-child
+					margin-right: 0
+				a
+					color: $light
+					transition: all 0.2s
+					font-size: 0.6833333333333332VW
+					font-weight: 500
+					opacity: 0.4
+					text-transform: uppercase
+					&:hover
+						opacity: 1
+				&.current_page_item
+					a
+						color: #fff
+						opacity: 1
+						&::after
+							content: none
+	
+	.header-right
+		order: 2
+		display: flex
+		justify-content: flex-end
+		flex-basis: 37%
+		position: relative
+		left: 4.791666666666667VW
+
+	.header__phone
+		display: flex
+		margin-top: 0
+		margin-right: 1.6145833333333335VW
+		
+
+	.header__phone-circle
+		width: 1.3541666666666667VW
+		height: 1.3541666666666667VW
+		margin-right: 0.46875VW
+		object
+			width: 0.5208333333333333VW
+			height: 0.5208333333333333VW
+
+	.header__phone-number
+		font-size: 1.0416666666666665VW
+		letter-spacing: 0.10416666666666667VW
+		
+	
+
+	.close
+		opacity: 0.8
+		transition: all 0.2s
+		&:hover
+			opacity: 1
+			cursor: pointer
+
+
+	.header--active
+		.header__nav
+			top: 0
+			transform: scale(1)

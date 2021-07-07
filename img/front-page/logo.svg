@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="598" height="509" viewBox="0 0 598 509">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: blue;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #b36ceb;
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+
+      .cls-4 {
+        filter: url(#filter-4);
+      }
+
+      .cls-5 {
+        filter: url(#filter-5);
+      }
+    </style>
+    <filter id="filter" x="0.719" y="0.469" width="145.406" height="359.781" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#be8b65"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="451.156" y="152.5" width="147.032" height="353.5" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#be8b65"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="5" y="218.312" width="291.75" height="291.063" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e7aa78"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="301" y="2" width="294" height="294" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#e7aa78"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="148.906" y="1.281" width="299.938" height="502.75" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#99755e"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M1.221,144.284L146.137,0.483,145.643,215.8,0.724,360.244Z"/>
+  <path  class="cls-2" d="M452.644,298.527L598.2,152.508l-1.238,217L451.148,506.016Z"/>
+  <path  class="cls-3" d="M4.991,362.311L148.4,218.305l148.36,145.153L155.207,509.375Z"/>
+  <path class="cls-4" d="M301,146.819L446.261,1.988,594.993,151.156,449.735,295.987Z"/>
+  <path class="cls-5" d="M149.924,1.267L448.851,300.556l-1.44,203.476L148.9,213.076Z"/>
+</svg>

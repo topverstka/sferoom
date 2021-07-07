@@ -1,0 +1,66 @@
+@keyframes stars {
+    0% {
+    opacity: 1;
+    }
+    25% {
+    opacity: 0.5;
+    }
+    50% {
+    opacity: 0;
+    }
+    75% {
+    opacity: 0.5;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+@keyframes moveIt {
+    from {background-position: 0px center ;}
+    to {background-position: 318.125VW center ;}
+}
+
+
+@keyframes moveItBig {
+    from {background-position: 0px center ;}
+    to {background-position: 98vw center ;}
+}
+
+
+
+@keyframes pulse {
+ 0% {
+  transform: scale(0.5);
+  opacity: 0;
+ }
+ 50% {
+  opacity: 0.7;
+ }
+ 100% {
+  transform: scale(1);
+  opacity: 0;
+ }
+}
+
+@-webkit-keyframes pulse {
+ 0% {
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5) ;
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+ }
+ 50% {
+  opacity: 0.7;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 0;
+ }
+}
