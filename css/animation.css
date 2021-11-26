@@ -16,6 +16,7 @@
     }
 }
 
+
 @keyframes moveIt {
     from {background-position: 0px center ;}
     to {background-position: 318.125VW center ;}

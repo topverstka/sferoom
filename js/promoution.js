@@ -1,15 +1,17 @@
 function switchMac(mac){
     var d = document;
+
     mac.setAttribute('src','./img/front-page/features/mac1.png');
     mac.classList.add('features__mac-after--active')
     var allMacControllers = d.querySelectorAll('.features__elem');
-    for (let i = 0; i < allMacControllers.length; i++) {
-        allMacControllers[i].addEventListener('mousemove', function(){
-            var newSrc = this.getAttribute('data-image');
-            newSrc = './img/front-page/features/mac'+newSrc+'.png'
-            mac.setAttribute('src', newSrc);
-        })
-    }
+    
+    // for (let i = 0; i < allMacControllers.length; i++) {
+    //     allMacControllers[i].addEventListener('mousemove', function(){
+    //         var newSrc = this.getAttribute('data-image');
+    //         newSrc = './img/front-page/features/mac'+newSrc+'.jpeg'
+    //         mac.setAttribute('src', newSrc);
+    //     })
+    // }
 } 
 
 

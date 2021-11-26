@@ -2,13 +2,17 @@
 .first-screen
     color: $light
     background-color: #000
-    padding-top: 38.75VW
+    //padding-top: 38.75VW
+    padding-top: 29.75VW
     padding-bottom: 8.4375VW
     // background-image: url(../img/front-page/first-screen/bg-pc.jpg)
     // background-position: -162.5VW 70VW
     background-repeat: no-repeat
     background-size: 312.5VW
     text-align: center
+    .container
+        position: relative
+        z-index: 1
 
     .dynamin-phone
         display: block
@@ -18,17 +22,18 @@
         position: absolute
         width: 53.125VW
         left: 21.875VW
-        top: 143.75VW
-        top: 113.75VW
+        // top: 143.75VW
+        // top: 113.75VW
+        top: 113.75vw
         transform: skewX(-12deg)
-        z-index: 1
+        z-index: 5
 
     .dynamin-phone__menu-item
         width: 100%
         height: 10VW
         display: inline-block
         margin-bottom: 0.625VW
-        //background-color: #000
+        //background-color: red
         &--play
             width: 25VW
             height: 8.75VW
@@ -61,15 +66,29 @@
         &.active
             z-index: 0
 
+    .first-screen-bg
+        position: absolute
+        z-index: 0
+        top: 70VW
+        width: 312.5VW
+        left: -162.5VW
+        max-width: none
+
+
 @media (max-width: 992px)
     .video__media--phone
+        left: 0VW
+        top: 11.458333333333332VW
+        width: 100vw
+    
+    .first-screen-bg
         left: 0VW
         top: 11.458333333333332VW
         width: 100vw
 
     .dynamin-phone__alert
         right: 2.5VW
-        top: 110.5625VW
+        top: 125.5625VW
 
     .title
         font-size: 9.753125VW
@@ -244,7 +263,7 @@ input[type="range"]::-webkit-slider-thumb
         left: 10VW
         top: 48%
         transform: translateY(-50%)
-        width: 1.0416666666666665VW
+        width: 5VW
         object-fit: cover
 
 
@@ -303,6 +322,7 @@ input[type="range"]::-webkit-slider-thumb
             width: 15.364583333333334VW
             left: 64.58333333333334VW
             top: 16.541667VW
+            //top: 19.9VW
             transform: skewX(-12deg)
             z-index: 2
 
@@ -337,7 +357,12 @@ input[type="range"]::-webkit-slider-thumb
 
         .video__media--phone
             position: absolute
-            width:
+            top: 5.604167VW
+            left: 18.229166666666664VW
+            width: 79.75VW
+        
+        .first-screen-bg
+            position: absolute
             top: 5.604167VW
             left: 18.229166666666664VW
             width: 79.75VW
@@ -365,7 +390,7 @@ input[type="range"]::-webkit-slider-thumb
 
         .dynamin-phone__alert
             right: 13.28125VW
-            top: 16.28125VW
+            top: 19.28125VW
 
     .musicplayer .wrap
         flex-wrap: nowrap

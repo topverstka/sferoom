@@ -16,12 +16,18 @@
     display: flex
     align-items: center
     justify-content: center
+    flex-direction: column
     z-index: 10
     transition: all 0.5s
     overflow: hidden
     &.done
         z-index: 0
         opacity: 0
+    svg
+        width: 15.625VW
+    img
+        width: 15.625VW
+        
 
 .preloader__video
     width: 100vw
@@ -30,7 +36,51 @@
     top: 50%
     transform: translate(-50%, -50%)
 
+
+.load-perc
+    margin-top: 8.5VW
+    background-color: #848484
+    max-width: 42.25VW
+    width: 100%
+    position: relative
+    height: 1.25VW
+
+.load-perc-line
+    background-color: #fff
+    height: 100%
+    width: 0
+    position: absolute
+    left: 0
+    top: 0
+    transition: all 0.2s
+
+#first-screen
+    transition: all 1s
+
+.presentation
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    transition: all 2s
+    width: 100vw
+
+.presentation-load
+    overflow: hidden
+    height: 0
+    
+    
+.presentation.active
+        height: auto
+        position: static 
+        opacity: 1
+
 @media (min-width: 992px)
+
+    .load-perc
+        max-width: 12.5VW
+        height: 0.20833333333333334VW
+        margin-top: 2.083333333333333VW
 
     .preloader-box__logo
         width: 2.604166666666667VW
@@ -38,6 +88,13 @@
         img
             width: 2.604166666666667VW
             max-width: 10.416666666666668VW
+    
+    .preloader
+        img
+            width: 3.604166666666667VW
+        svg
+            width: 3.604166666666667VW
+
 
     .preloader-box-line
         width: 14.322916666666666VW
@@ -72,7 +129,7 @@
     opacity: 0
 
 ._animation-video
-    opacity: 0 !important
+    //opacity: 0 !important
     &._active
         opacity: 1 !important
 
@@ -86,7 +143,7 @@
     width: 0
 
 .video__media
-    opacity: 0
+    //opacity: 0
     transition: all 0.2s
 
 .hero
@@ -242,6 +299,7 @@
 #lights-first-distribution
     margin-top: -127.09375VW
     width: 100%
+    z-index: 3
     img
         width: 100%
 
@@ -276,8 +334,6 @@
         font-size: 3.682291666666667VW
         line-height: 4.624479166666666VW
         margin-bottom: 1.7187500000000002VW
-        transform: translateY(2vw)
-        opacity: 0
         transition: all 1s
 
     .subtitle
@@ -285,16 +341,12 @@
         line-height: 1.7901041666666666VW
         margin-bottom: 2.7083333333333335VW
         color: #c8c8c8
-        transform: translateY(2vw)
-        opacity: 0
         transition: all 1.5s
 
     .wrap--first
         .btn
             transform: scale(1)
             z-index: 9
-            transform: translateY(2vw)
-            opacity: 0
             transition: all 2s
 
     .social-links
@@ -467,4 +519,4 @@
 @import 'sections/sales'
 @import 'modal'
 
-
+ 

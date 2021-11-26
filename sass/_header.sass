@@ -18,10 +18,13 @@
 	.btn--lk
 		display: none
 		transform: scale(0.9)
+
+	.social-links
+		display: none
 	
 .header--glued
 	position: fixed
-	background-color: rgba(0,0,0, 0.8)
+	background-color: rgba(0,0,0, 1)
 	padding-top: 8vw
 	padding-bottom: 8vw
 
@@ -165,7 +168,7 @@
 @media (max-width: 991px)
 	.header--active
 		overflow-y: scroll
-		background-color: rgba(18,19,24, 0.94)
+		background-color: rgba(18,19,24, 1)
 		z-index: 7
 		padding-top: 12.812499999999998VW
 		background-position: center bottom
@@ -237,6 +240,12 @@
 			margin: 0
 			margin-left: 2.2395833333333335VW
 			border-width: 0.052083333333333336VW
+		
+		.social-links
+			display: inline-flex
+			margin: 0
+			margin-left: 0
+			margin-right: 35px
 	
 	.header--glued
 		padding-top: 2vw
@@ -289,12 +298,14 @@
 		top: -5.208333333333334VW
 		position: relative
 		transform: scale(0.5)
-		margin-right: 0.5208333333333333VW
+		margin-right: -2.604166666666667VW
+		z-index: 2
 		ul
 			display: flex
 			li
 				list-style: none
 				margin-right: 1.3020833333333335VW
+				margin-right: 0.6VW
 				margin-bottom: 0
 				&:last-child
 					margin-right: 0
@@ -318,9 +329,11 @@
 		order: 2
 		display: flex
 		justify-content: flex-end
-		flex-basis: 37%
+		flex-basis: 46%
 		position: relative
 		left: 4.791666666666667VW
+		position: absolute
+		right: 0
 
 	.header__phone
 		display: flex

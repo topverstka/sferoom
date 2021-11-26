@@ -10,7 +10,7 @@
     z-index: -1
     transition: all 0.5s
     &.modal--active
-        z-index: 5
+        z-index: 9
         .modal-overlay
             opacity: 0.74
 
@@ -63,10 +63,34 @@
     border-radius: 0.625VW
     padding: 6.25VW
     font-size: 4.0625VW
+    color: #fff
 
 .btn--modal-form
     font-size: 3.75VW
     
+.modal .modal-window--order-blog
+	color: #ffffff
+	width: 900px
+	max-width: 95%
+
+.modal .modal-window--order-blog
+    text-align: left
+    font-size: 14px
+    p
+        margin-bottom: 15px
+        line-height: 1.4
+    .modal-window__title
+        text-align: center
+        
+.modal.modal--active.modal-blog, .modal.modal--active.modal-call
+	z-index: 10
+
+
+
+.modal
+    .modal-window--order-blog,.modal-window--order-call
+        max-height: 85%
+        overflow-y: scroll
 
 @media (min-width: 992px)
     .modal-window
@@ -90,7 +114,7 @@
 
     .modal-window__form-input
         padding: 1.6666666666666667VW
-        font-size: 0.7135416666666666VW
+        font-size: 0.9135416666666666VW
         line-height: 0.8119791666666666VW
         margin-bottom: 1.4583333333333333VW
         border-radius: 0.10416666666666667VW
@@ -99,6 +123,8 @@
         font-size: 0.7135416666666666VW
         line-height: 0.8119791666666666VW
         padding: 1.6145833333333335VW
+
+    
     
 
         

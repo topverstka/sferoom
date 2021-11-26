@@ -1,0 +1,151 @@
+footer
+	padding-top: 167px
+	padding-bottom: 60px
+	background-color: $dark
+	color: $light
+	position: relative
+	overflow: hidden
+	.wrap--second
+		text-align: center
+
+	.privacy-policy
+		color: $light
+		font-size: 14px
+
+.footer__logo
+	position: absolute
+	top: 34px
+	left: 50%
+	transform: translate(-50%)
+	color: $dark
+	font-size: 21px
+	&::before
+		content: ''
+		width: 213px
+		height: 213px
+		border-radius: 50%
+		position: absolute
+		top: -124px
+		left: 50%
+		transform: translateX(-50%)
+		z-index: -1
+		transition: all 0.5s
+
+.footer__nav
+	margin-bottom: 50px
+	ul
+		li
+			list-style: none
+			margin-bottom: 21px
+			&:last-child
+				margin-bottom: 0
+			a
+				font-size: 20px
+				color: $light
+
+
+.footer__contacts
+	margin-bottom: 50px
+
+.footer__contacts-link
+	color: $light
+	margin-right: 36px
+	font-size: 23px
+	margin-bottom: 10px
+	display: inline-block
+	&:last-child
+		margin-right: 0
+
+.privacy-policy
+	font-size: 16px
+	color: $accent
+
+@media (min-width: 570px)
+	.footer
+		.wrap--first
+			display: flex
+			justify-content: space-between
+	
+	.footer__nav
+		ul
+			li
+				a
+					font-size: 25px
+
+
+	.footer__contacts
+		flex-basis: 250px
+		margin-bottom: 0px
+
+	.footer__contacts-link
+		font-size: 25px
+
+	
+@media (min-width: 992px)
+	.footer
+		padding-top: 32px
+		padding-bottom: 32px
+
+		.wrap--first
+			justify-content: center
+			justify-content: flex-end
+			position: relative
+			margin-bottom: 30px
+
+	.footer__logo
+		left: 0
+		top: 28px
+		transform: translate(0)
+		top: -9px
+		font-size: 16px
+		margin-left: 41px
+		&::before
+			width: 157px
+			height: 157px
+			top: -89px
+
+	.footer__contacts
+		order: 1
+		flex-basis: 210px
+
+	.footer__contacts-link--phone
+		font-size: 20px
+
+	.footer__contacts-link--mail
+		font-size: 16px
+
+	.footer__nav
+		order: 2
+		ul
+			display: flex
+			li
+				margin-bottom: 0
+				margin-right: 29px
+				&:last-child
+					margin-right: 0
+				a
+					font-size: 16px
+					opacity: 0.9
+					transition: all 0.2s
+					&:hover
+						opacity: 1
+
+	.privacy-policy
+		opacity: 0.8
+		transition: all 0.2s
+		&:hover
+			opacity: 1
+	
+
+@media (min-width: 1400px)
+	.footer
+		.wrap--first
+			justify-content: flex-start
+			padding-left: 326px
+
+	.footer__contacts
+		flex-basis: auto
+		margin-right: 172px
+
+	.footer__contacts-link
+		display: block
